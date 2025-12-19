@@ -2,115 +2,162 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Jasa Excel Profesional | Solusi Cepat & Otomatis</title>
+<title>Jasa Excel Profesional | Otomatis & Cepat</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jasa Excel profesional untuk UMKM & perusahaan. Perbaikan Excel, dashboard otomatis, dan VBA macro. Konsultasi gratis via WhatsApp.">
+<meta name="description" content="Jasa Excel profesional: perbaikan file, dashboard, VBA macro. Hemat waktu kerja dan minim error. Konsultasi gratis.">
 
 <style>
+:root{
+    --green:#1d6f42;      /* Excel Green */
+    --green-light:#21a366;
+    --dark:#1e293b;
+    --bg:#f4f7f6;
+}
+
+*{box-sizing:border-box}
+
 body{
     margin:0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background:#f5f7fa;
+    font-family:'Segoe UI',Arial,sans-serif;
+    background:var(--bg);
     color:#333;
 }
+
+/* HERO */
 .hero{
-    background:linear-gradient(135deg,#0d47a1,#1e88e5);
+    background:linear-gradient(135deg,var(--green),var(--green-light));
     color:#fff;
-    padding:70px 20px;
+    padding:80px 20px;
     text-align:center;
 }
 .hero h1{
-    font-size:34px;
+    font-size:36px;
     margin-bottom:15px;
 }
 .hero p{
     font-size:18px;
-    max-width:700px;
+    max-width:750px;
     margin:auto;
 }
+
+/* CONTAINER */
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
-    padding:50px 20px;
+    padding:60px 20px;
 }
+
+/* SECTION TITLE */
 .section-title{
     text-align:center;
-    color:#0d47a1;
-    margin-bottom:35px;
+    font-size:28px;
+    color:var(--green);
+    margin-bottom:40px;
 }
-.cards{
+
+/* GRID */
+.grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-    gap:25px;
+    gap:30px;
 }
+
+/* CARD */
 .card{
     background:#fff;
     padding:30px;
-    border-radius:15px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+    transition:.3s;
+}
+.card:hover{
+    transform:translateY(-5px);
 }
 .card h3{
     margin-top:0;
-    color:#1e88e5;
+    color:var(--green);
 }
+
+/* PROBLEM */
 .problem{
-    background:#fff3e0;
-    border-left:6px solid #ff9800;
+    border-top:6px solid #ef4444;
+    background:#fff5f5;
 }
+
+/* SOLUTION */
 .solution{
-    background:#e3f2fd;
-    border-left:6px solid #1e88e5;
+    border-top:6px solid var(--green-light);
+    background:#f0fdf4;
 }
+
+/* PRICE */
 .price{
-    background:#e8f5e9;
-    border-left:6px solid #4caf50;
+    border-top:6px solid #16a34a;
 }
-.testimoni{
-    background:#ffffff;
-    font-style:italic;
+
+/* BADGE */
+.badge{
+    display:inline-block;
+    background:var(--green);
+    color:#fff;
+    padding:6px 14px;
+    border-radius:50px;
+    font-size:14px;
+    margin-bottom:10px;
 }
+
+/* CTA */
 .cta{
-    background:#0d47a1;
+    background:linear-gradient(135deg,var(--green),#14532d);
     color:#fff;
     text-align:center;
-    padding:60px 20px;
+    padding:70px 20px;
 }
 .cta h2{
+    font-size:32px;
     margin-bottom:10px;
 }
 .cta a{
     display:inline-block;
     background:#25D366;
     color:#fff;
-    padding:18px 35px;
+    padding:18px 40px;
     border-radius:50px;
     text-decoration:none;
     font-size:20px;
     font-weight:bold;
-    margin-top:15px;
+    margin-top:20px;
 }
 .cta a:hover{
     background:#1ebe5d;
 }
-.footer{
+
+/* TESTIMONI */
+.testimoni{
+    font-style:italic;
+    line-height:1.7;
+}
+
+/* FOOTER */
+footer{
+    background:#e5e7eb;
     text-align:center;
     padding:20px;
     font-size:14px;
-    background:#e0e0e0;
 }
 
-/* Floating WhatsApp */
+/* FLOATING WA */
 .wa-float{
     position:fixed;
     bottom:20px;
     right:20px;
     background:#25D366;
-    color:white;
-    padding:15px 20px;
+    color:#fff;
+    padding:16px 22px;
     border-radius:50px;
-    text-decoration:none;
     font-weight:bold;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
+    text-decoration:none;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
 }
 </style>
 </head>
@@ -118,50 +165,54 @@ body{
 <body>
 
 <!-- HERO -->
-<div class="hero">
-    <h1>Excel Anda Ribet, Lambat, dan Sering Error?</h1>
-    <p>Saya bantu ubah Excel Anda jadi otomatis, rapi, dan hemat jam kerja setiap hari.</p>
-</div>
-
-<div class="container">
+<section class="hero">
+    <span class="badge">JASA EXCEL PROFESIONAL</span>
+    <h1>Ubah Excel Anda Jadi Cepat, Otomatis, dan Bebas Error</h1>
+    <p>Saya membantu UMKM & perusahaan menyederhanakan pekerjaan Excel agar hemat waktu dan lebih akurat.</p>
+</section>
 
 <!-- PROBLEM -->
-<h2 class="section-title">Masalah yang Sering Terjadi</h2>
-<div class="cards">
+<section class="container">
+<h2 class="section-title">Masalah yang Sering Dialami</h2>
+<div class="grid">
     <div class="card problem">
-        <h3>❌ Excel Lambat & Error</h3>
-        <p>Rumus panjang, file berat, sering salah hitung.</p>
+        <h3>Excel Lambat & Crash</h3>
+        <p>File berat, rumus berantakan, dan sering error.</p>
     </div>
     <div class="card problem">
-        <h3>❌ Laporan Manual</h3>
-        <p>Setiap bulan copy-paste, buang waktu & rawan salah.</p>
+        <h3>Laporan Manual</h3>
+        <p>Setiap bulan copy-paste, buang waktu dan rawan salah.</p>
     </div>
     <div class="card problem">
-        <h3>❌ Tidak Ada Otomatisasi</h3>
-        <p>Pekerjaan berulang dikerjakan manual.</p>
+        <h3>Pekerjaan Berulang</h3>
+        <p>Input data dan proses yang sama setiap hari.</p>
     </div>
 </div>
+</section>
 
 <!-- SOLUTION -->
+<section class="container">
 <h2 class="section-title">Solusi yang Saya Tawarkan</h2>
-<div class="cards">
+<div class="grid">
     <div class="card solution">
-        <h3>✅ Perbaikan & Optimasi Excel</h3>
-        <p>File lebih cepat, rapi, dan mudah digunakan.</p>
+        <h3>Optimasi & Perbaikan Excel</h3>
+        <p>Struktur rapi, rumus efisien, dan performa lebih cepat.</p>
     </div>
     <div class="card solution">
-        <h3>✅ Dashboard Otomatis</h3>
-        <p>Laporan langsung update tanpa ribet.</p>
+        <h3>Dashboard Otomatis</h3>
+        <p>Laporan langsung update tanpa kerja manual.</p>
     </div>
     <div class="card solution">
-        <h3>✅ VBA & Otomatisasi</h3>
-        <p>Sekali klik, pekerjaan selesai.</p>
+        <h3>VBA & Otomatisasi</h3>
+        <p>Sekali klik, proses panjang langsung selesai.</p>
     </div>
 </div>
+</section>
 
 <!-- PRICE -->
+<section class="container">
 <h2 class="section-title">Investasi Biaya</h2>
-<div class="cards">
+<div class="grid">
     <div class="card price">
         <h3>Basic</h3>
         <p><strong>Mulai Rp50.000</strong></p>
@@ -178,38 +229,39 @@ body{
         <p>Otomatisasi sesuai kebutuhan bisnis</p>
     </div>
 </div>
+</section>
 
 <!-- TESTIMONI -->
+<section class="container">
 <h2 class="section-title">Testimoni Klien</h2>
-<div class="cards">
+<div class="grid">
     <div class="card testimoni">
-        “Setelah Excel diotomatisasi, laporan bulanan jadi jauh lebih cepat.”
-        <br><strong>— Staff Finance</strong>
+        “Excel kami jadi jauh lebih cepat dan mudah dipakai.”
+        <br><strong>— Staff Accounting</strong>
     </div>
     <div class="card testimoni">
-        “Dashboard Excel sangat membantu monitoring penjualan.”
+        “Dashboard sangat membantu monitoring penjualan.”
         <br><strong>— Owner UMKM</strong>
     </div>
 </div>
-
-</div>
+</section>
 
 <!-- CTA -->
-<div class="cta">
+<section class="cta">
     <h2>Konsultasi GRATIS Sekarang</h2>
     <p>Ceritakan masalah Excel Anda, saya bantu solusinya.</p>
     <a href="https://wa.me/628XXXXXXXXXX" target="_blank">
         Chat WhatsApp Sekarang
     </a>
-</div>
+</section>
 
 <a class="wa-float" href="https://wa.me/628XXXXXXXXXX" target="_blank">
 💬 WhatsApp
 </a>
 
-<div class="footer">
-    © 2026 Jasa Excel Profesional
-</div>
+<footer>
+© 2026 Jasa Excel Profesional
+</footer>
 
 </body>
 </html>
