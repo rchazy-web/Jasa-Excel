@@ -2,280 +2,208 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<title>Jasa Excel Profesional | Otomatis & Cepat</title>
+<title>Konsultan Excel | Solusi Praktis & Otomatis</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Jasa Excel profesional untuk UMKM & perusahaan. Perbaikan Excel, dashboard otomatis, dan VBA macro. Konsultasi gratis via WhatsApp.">
+<meta name="description" content="Konsultan Excel untuk perbaikan file, laporan otomatis, dan VBA. Solusi praktis, rapi, dan mudah digunakan.">
 
 <style>
 :root{
-    --green:#1d6f42;
-    --green-light:#21a366;
-    --bg:#f4f7f6;
-    --danger:#ef4444;
+    --green:#217346;
+    --soft:#f3f7f5;
+    --dark:#1f2937;
+    --border:#e5e7eb;
 }
 
 *{box-sizing:border-box}
 
 body{
     margin:0;
-    font-family:'Segoe UI',Arial,sans-serif;
-    background:var(--bg);
-    color:#333;
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;
+    background:#ffffff;
+    color:var(--dark);
+    line-height:1.7;
 }
 
-/* HERO */
-.hero{
-    background:linear-gradient(135deg,var(--green),var(--green-light));
-    color:#fff;
-    padding:90px 20px;
-    text-align:center;
+header{
+    padding:70px 20px;
+    background:var(--soft);
+    border-bottom:1px solid var(--border);
 }
-.hero h1{
-    font-size:38px;
+
+.wrap{
+    max-width:960px;
+    margin:auto;
+}
+
+h1{
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+h2{
+    font-size:26px;
     margin-bottom:15px;
 }
-.hero p{
+
+h3{
     font-size:18px;
-    max-width:760px;
-    margin:auto;
+    margin-bottom:8px;
 }
 
-/* GENERAL */
-.container{
-    max-width:1100px;
-    margin:auto;
+p{
+    margin:0 0 15px;
+}
+
+.badge{
+    display:inline-block;
+    background:var(--green);
+    color:#fff;
+    padding:6px 14px;
+    border-radius:6px;
+    font-size:14px;
+    margin-bottom:15px;
+}
+
+section{
     padding:60px 20px;
+    border-bottom:1px solid var(--border);
 }
-.section-title{
-    text-align:center;
-    font-size:28px;
-    color:var(--green);
-    margin-bottom:40px;
-}
+
 .grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:30px;
 }
 
-/* CARD */
-.card{
+.box{
+    padding:25px;
+    border:1px solid var(--border);
+    border-radius:12px;
     background:#fff;
-    padding:30px;
-    border-radius:18px;
-    box-shadow:0 10px 30px rgba(0,0,0,.08);
-    transition:.3s;
 }
-.card:hover{
-    transform:translateY(-6px);
-}
-.card h3{
-    margin-top:0;
-    color:var(--green);
-}
-.card ul{
+
+ul{
     padding-left:18px;
 }
 
-/* VARIANTS */
-.problem{
-    background:#fff5f5;
-    border-top:6px solid var(--danger);
-}
-.solution{
-    background:#f0fdf4;
-    border-top:6px solid var(--green-light);
-}
-.price{
-    border-top:6px solid #16a34a;
-}
-.before{
-    background:#fff5f5;
-    border-left:6px solid var(--danger);
-}
-.after{
-    background:#f0fdf4;
-    border-left:6px solid #16a34a;
-}
-.testimoni{
-    font-style:italic;
+li{
+    margin-bottom:6px;
 }
 
-/* CTA */
 .cta{
-    background:linear-gradient(135deg,var(--green),#14532d);
+    background:#217346;
     color:#fff;
-    text-align:center;
-    padding:70px 20px;
+    padding:50px 20px;
 }
-.cta h2{
-    font-size:32px;
-}
+
 .cta a{
     display:inline-block;
+    margin-top:15px;
     background:#25D366;
     color:#fff;
-    padding:18px 40px;
-    border-radius:50px;
+    padding:14px 28px;
+    border-radius:6px;
     text-decoration:none;
-    font-size:20px;
-    font-weight:bold;
-    margin-top:20px;
-}
-.cta a:hover{
-    background:#1ebe5d;
+    font-weight:600;
 }
 
-/* FLOATING WA */
-.wa-float{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:#fff;
-    padding:16px 22px;
-    border-radius:50px;
-    font-weight:bold;
-    text-decoration:none;
-    box-shadow:0 8px 20px rgba(0,0,0,.25);
-}
-
-/* FOOTER */
 footer{
-    background:#e5e7eb;
+    padding:25px 20px;
     text-align:center;
-    padding:20px;
     font-size:14px;
+    color:#6b7280;
 }
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<section class="hero">
-    <h1>Excel Anda Ribet, Lambat, dan Sering Error?</h1>
-    <p>Saya bantu mengubah Excel Anda menjadi otomatis, rapi, dan hemat jam kerja setiap hari.</p>
-</section>
+<header>
+    <div class="wrap">
+        <span class="badge">KONSULTAN EXCEL</span>
+        <h1>Solusi Excel yang Rapi, Praktis, dan Mudah Digunakan</h1>
+        <p>
+            Membantu merapikan file Excel, membuat laporan otomatis,
+            dan menyederhanakan pekerjaan kantor sehari-hari.
+        </p>
+    </div>
+</header>
 
-<!-- PROBLEM -->
-<section class="container">
-<h2 class="section-title">Masalah yang Sering Terjadi</h2>
-<div class="grid">
-    <div class="card problem">
-        <h3>Excel Lambat & Crash</h3>
-        <p>File berat, rumus panjang, sering salah hitung.</p>
-    </div>
-    <div class="card problem">
-        <h3>Laporan Manual</h3>
-        <p>Copy-paste tiap bulan, buang waktu & rawan error.</p>
-    </div>
-    <div class="card problem">
-        <h3>Tidak Ada Otomatisasi</h3>
-        <p>Pekerjaan berulang dikerjakan manual.</p>
+<section>
+<div class="wrap">
+    <h2>Apa yang Bisa Saya Bantu</h2>
+    <div class="grid">
+        <div class="box">
+            <h3>Perbaikan File Excel</h3>
+            <p>Rumus error, file berat, dan struktur data yang tidak rapi.</p>
+        </div>
+        <div class="box">
+            <h3>Laporan & Dashboard</h3>
+            <p>Laporan otomatis bulanan tanpa copy–paste berulang.</p>
+        </div>
+        <div class="box">
+            <h3>VBA & Otomatisasi</h3>
+            <p>Mengurangi pekerjaan manual dengan proses otomatis.</p>
+        </div>
     </div>
 </div>
 </section>
 
-<!-- BEFORE AFTER -->
-<section class="container">
-<h2 class="section-title">Before vs After Excel</h2>
-<div class="grid">
-    <div class="card before">
-        <h3>❌ Sebelum</h3>
-        <ul>
-            <li>Rumus berantakan</li>
-            <li>Input manual berulang</li>
-            <li>Laporan lama & tidak konsisten</li>
-            <li>File berat & lambat</li>
-        </ul>
-    </div>
-    <div class="card after">
-        <h3>✅ Sesudah</h3>
-        <ul>
-            <li>Rumus efisien & stabil</li>
-            <li>Otomatisasi sekali klik</li>
-            <li>Laporan rapi & realtime</li>
-            <li>File ringan & cepat</li>
-        </ul>
-    </div>
+<section>
+<div class="wrap">
+    <h2>Cocok Untuk</h2>
+    <ul>
+        <li>Staff administrasi & finance</li>
+        <li>Supervisor & manager</li>
+        <li>Owner UMKM</li>
+        <li>Karyawan yang ingin kerja lebih efisien</li>
+    </ul>
 </div>
-<p style="text-align:center;margin-top:25px;font-weight:bold;">
-Rata-rata klien menghemat waktu kerja hingga 50%.
-</p>
 </section>
 
-<!-- SOLUTION -->
-<section class="container">
-<h2 class="section-title">Solusi yang Saya Tawarkan</h2>
-<div class="grid">
-    <div class="card solution">
-        <h3>Perbaikan & Optimasi Excel</h3>
-        <p>Struktur rapi, performa cepat, minim error.</p>
-    </div>
-    <div class="card solution">
-        <h3>Dashboard Otomatis</h3>
-        <p>Laporan langsung update tanpa ribet.</p>
-    </div>
-    <div class="card solution">
-        <h3>VBA & Otomatisasi</h3>
-        <p>Proses panjang jadi satu klik.</p>
+<section>
+<div class="wrap">
+    <h2>Alur Kerja</h2>
+    <div class="grid">
+        <div class="box">
+            <h3>1. Diskusi</h3>
+            <p>Jelaskan kebutuhan dan masalah Excel Anda.</p>
+        </div>
+        <div class="box">
+            <h3>2. Analisa File</h3>
+            <p>Saya cek struktur & solusi yang paling efisien.</p>
+        </div>
+        <div class="box">
+            <h3>3. Pengerjaan</h3>
+            <p>File dibuat rapi, otomatis, dan mudah digunakan.</p>
+        </div>
     </div>
 </div>
 </section>
 
-<!-- PRICE -->
-<section class="container">
-<h2 class="section-title">Investasi Biaya</h2>
-<div class="grid">
-    <div class="card price">
-        <h3>Basic</h3>
-        <p><strong>Mulai Rp50.000</strong></p>
-        <p>Perbaikan file & rumus sederhana</p>
-    </div>
-    <div class="card price">
-        <h3>Standard</h3>
-        <p><strong>Mulai Rp150.000</strong></p>
-        <p>Dashboard & laporan otomatis</p>
-    </div>
-    <div class="card price">
-        <h3>Custom VBA</h3>
-        <p><strong>Sesuai Kompleksitas</strong></p>
-        <p>Otomatisasi khusus bisnis</p>
-    </div>
+<section>
+<div class="wrap">
+    <h2>Estimasi Biaya</h2>
+    <ul>
+        <li>Perbaikan Excel sederhana: mulai Rp50.000</li>
+        <li>Laporan & dashboard otomatis: mulai Rp150.000</li>
+        <li>Otomatisasi VBA: sesuai kompleksitas</li>
+    </ul>
 </div>
 </section>
 
-<!-- TESTIMONI -->
-<section class="container">
-<h2 class="section-title">Testimoni Klien</h2>
-<div class="grid">
-    <div class="card testimoni">
-        “Excel kami jadi jauh lebih cepat dan mudah digunakan.”
-        <br><strong>— Staff Finance</strong>
-    </div>
-    <div class="card testimoni">
-        “Dashboard sangat membantu monitoring bisnis.”
-        <br><strong>— Owner UMKM</strong>
-    </div>
-</div>
-</section>
-
-<!-- CTA -->
 <section class="cta">
-    <h2>Konsultasi GRATIS Sekarang</h2>
-    <p>Ceritakan masalah Excel Anda, saya bantu solusinya.</p>
+<div class="wrap">
+    <h2>Konsultasi Awal (Gratis)</h2>
+    <p>Silakan jelaskan kebutuhan Excel Anda melalui WhatsApp.</p>
     <a href="https://wa.me/628XXXXXXXXXX" target="_blank">
-        Chat WhatsApp Sekarang
+        Hubungi via WhatsApp
     </a>
+</div>
 </section>
-
-<a class="wa-float" href="https://wa.me/628XXXXXXXXXX" target="_blank">
-💬 WhatsApp
-</a>
 
 <footer>
-© 2026 Jasa Excel Profesional
+© 2026 Konsultan Excel
 </footer>
 
 </body>
