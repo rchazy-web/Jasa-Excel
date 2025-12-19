@@ -1,109 +1,203 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jasa Excel Profesional | Rendy Setiawan</title>
-  <meta name="description" content="Jasa Excel profesional: perbaikan file, dashboard otomatis, dan VBA macro. Cepat, rapi, dan siap dipakai." />
-  <style>
-    :root{--primary:#2563eb;--dark:#0f172a;--muted:#64748b;--bg:#f8fafc}
-    *{box-sizing:border-box;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,"Helvetica Neue",Arial}
-    body{margin:0;background:var(--bg);color:#0b1220}
-    .container{max-width:1100px;margin:auto;padding:24px}
-    header{background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff}
-    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}
-    h1{font-size:42px;margin:0 0 12px}
-    p{color:#e5edff;line-height:1.6}
-    .cta{display:inline-block;background:#22c55e;color:#052e16;padding:14px 20px;border-radius:12px;font-weight:700;text-decoration:none;margin-top:16px}
-    .card{background:#fff;border-radius:16px;box-shadow:0 10px 20px rgba(2,6,23,.08);padding:20px}
-    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
-    .price{font-size:22px;font-weight:800;color:var(--primary)}
-    .badge{display:inline-block;background:#eef2ff;color:#1e40af;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700}
-    section{margin-top:32px}
-    ul{padding-left:18px}
-    li{margin:8px 0;color:#334155}
-    .muted{color:var(--muted)}
-    footer{margin-top:48px;padding:24px 0;color:#475569}
-    @media(max-width:900px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
-  </style>
+    <meta charset="UTF-8">
+    <title>Jasa Excel Profesional | Dashboard & VBA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jasa Excel profesional untuk UMKM dan perusahaan. Perbaikan Excel, dashboard otomatis, dan VBA macro. Konsultasi gratis.">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e88e5, #0d47a1);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #0d47a1;
+        }
+
+        .services, .why, .pricing {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #1e88e5;
+        }
+
+        .card ul {
+            padding-left: 18px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+        }
+
+        .cta {
+            background: #0d47a1;
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .cta h2 {
+            color: white;
+        }
+
+        .cta a {
+            display: inline-block;
+            background: #25D366;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 18px;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        .cta a:hover {
+            background: #1ebe5d;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+            background: #e0e0e0;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <div class="container hero">
-      <div>
-        <span class="badge">Jasa Excel Profesional</span>
-        <h1>Solusi Excel Cepat & Rapi<br/>untuk UMKM & Kantor</h1>
-        <p>Perbaikan file Excel, dashboard otomatis, hingga VBA macro. Cocok untuk admin, logistik, gudang, dan owner UMKM.</p>
-        <a class="cta" href="https://wa.me/6283863570939?text=Halo%20saya%20ingin%20jasa%20Excel" target="_blank">Chat WhatsApp</a>
-        <p class="muted">Ganti nomor WA di link di atas</p>
-      </div>
-      <div class="card">
-        <h3>Kenapa pilih saya?</h3>
-        <ul>
-          <li>Berpengalaman menangani file Excel kompleks</li>
-          <li>Pengerjaan cepat & bisa direvisi</li>
-          <li>Harga transparan & masuk akal</li>
-        </ul>
-      </div>
+
+<header>
+    <h1>Jasa Excel Profesional</h1>
+    <p>Membantu UMKM & perusahaan membuat Excel lebih rapi, otomatis, dan hemat waktu kerja.</p>
+</header>
+
+<div class="container">
+
+    <h2>Layanan Kami</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Perbaikan Excel</h3>
+            <ul>
+                <li>Rumus error & lambat</li>
+                <li>File berat & tidak rapi</li>
+                <li>Optimasi struktur data</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>Dashboard & Laporan</h3>
+            <ul>
+                <li>Dashboard penjualan</li>
+                <li>Laporan otomatis bulanan</li>
+                <li>Grafik & pivot table</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>VBA & Otomatisasi</h3>
+            <ul>
+                <li>Macro otomatis</li>
+                <li>Import & export data</li>
+                <li>Button & form input</li>
+            </ul>
+        </div>
     </div>
-  </header>
 
-  <main class="container">
-    <section>
-      <h2>Layanan & Harga</h2>
-      <div class="grid">
+    <h2>Kenapa Pilih Kami?</h2>
+    <div class="why">
         <div class="card">
-          <h3>Perbaikan & Optimasi Excel</h3>
-          <p class="muted">Rumus error, file lambat, data berantakan</p>
-          <ul>
-            <li>Perbaikan formula</li>
-            <li>Rapikan data</li>
-            <li>Optimasi performa</li>
-          </ul>
-          <div class="price">Rp150.000 – Rp500.000</div>
+            <h3>Berpengalaman</h3>
+            <p>Terbiasa menangani Excel kantor, laporan, dan data operasional.</p>
         </div>
+
         <div class="card">
-          <h3>Dashboard & Laporan Otomatis</h3>
-          <p class="muted">Grafik & ringkasan siap pakai</p>
-          <ul>
-            <li>Sales, stok, delivery</li>
-            <li>Filter tanggal & customer</li>
-            <li>KPI ringkas</li>
-          </ul>
-          <div class="price">Rp500.000 – Rp1.000.000</div>
+            <h3>Praktis & Aman</h3>
+            <p>File rapi, mudah digunakan, dan minim risiko error.</p>
         </div>
+
         <div class="card">
-          <h3>Otomatisasi VBA Macro</h3>
-          <p class="muted">1 klik beres, hemat waktu</p>
-          <ul>
-            <li>Import & cleaning data</li>
-            <li>Generate laporan</li>
-            <li>Export PDF / Refresh Pivot</li>
-          </ul>
-          <div class="price">Rp750.000 – Rp3.000.000</div>
+            <h3>Support & Revisi</h3>
+            <p>Bisa diskusi dan revisi sesuai kebutuhan.</p>
         </div>
-      </div>
-    </section>
+    </div>
 
-    <section class="card">
-      <h2>Alur Kerja</h2>
-      <ol>
-        <li>Chat WhatsApp & jelaskan kebutuhan</li>
-        <li>Estimasi harga & waktu</li>
-        <li>Pengerjaan</li>
-        <li>Revisi & serah terima</li>
-      </ol>
-    </section>
+    <h2>Harga Jasa</h2>
+    <div class="pricing">
+        <div class="card">
+            <h3>Basic</h3>
+            <p><strong>Mulai Rp50.000</strong></p>
+            <p>Perbaikan rumus & file sederhana</p>
+        </div>
 
-    <section class="card">
-      <h2>Kontak</h2>
-      <p>WhatsApp: <strong>08xxxxxxxxxx</strong></p>
-      <p>Email: <strong>email@domain.com</strong></p>
-    </section>
-  </main>
+        <div class="card">
+            <h3>Standard</h3>
+            <p><strong>Mulai Rp150.000</strong></p>
+            <p>Dashboard & laporan otomatis</p>
+        </div>
 
-  <footer class="container">
-    <p>© 2026 Rendy Setiawan — Jasa Excel</p>
-  </footer>
+        <div class="card">
+            <h3>Custom VBA</h3>
+            <p><strong>By Request</strong></p>
+            <p>Otomatisasi khusus sesuai kebutuhan</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="cta">
+    <h2>Konsultasi Gratis Sekarang</h2>
+    <p>Ceritakan kebutuhan Excel Anda, kami bantu solusinya.</p>
+    <a href="https://wa.me/6283863570939" target="_blank">
+        Hubungi via WhatsApp
+    </a>
+</div>
+
+<footer>
+    © 2026 Jasa Excel Profesional
+</footer>
+
 </body>
 </html>
